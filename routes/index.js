@@ -16,15 +16,18 @@ const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   auth: {
     user: "thintry.no@gmail.com",
-    pass: "smzi jupm ojhj nnpb",
+    pass: "pass",
   },
 });
+
+// smzi jupm ojhj nnpb
 
 const User = mongoose.model('User', userSchema);
 
 // Connect to MongoDB (replace 'your_mongodb_uri' with your actual MongoDB URI)
 // 8B66mWtTcsgEm55f
-mongoose.connect('mongodb+srv://sajadpp:8B66mWtTcsgEm55f@verifeye.sfs5rd8.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
+// mongodb+srv://sajadpp:8B66mWtTcsgEm55f@verifeye.sfs5rd8.mongodb.net/
+mongoose.connect('uri', { useNewUrlParser: true, useUnifiedTopology: true });
 
 /* GET home page. */
 router.post('/waitlist/register', async function (req, res, next) {
